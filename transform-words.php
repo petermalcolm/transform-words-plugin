@@ -10,4 +10,7 @@ Author URI: http://petermalcolm.me
 
 defined( 'ABSPATH' ) or die( 'Do not access this file directly.' );
 
+function pmtw_install() {
+}
+
 ?>
