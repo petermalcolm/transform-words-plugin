@@ -1,7 +1,7 @@
 # transform-words-plugin
 WordPress Plugin for words that transform using jQuery transitions
 Shortcodes:
-[transform-words-replace ... ]
+[transform_words_replace ... ]
 This is used to replace words in a hero via fade-out and fade-in transitions.
 Example:
   Famous for chocolate cake.
@@ -9,7 +9,7 @@ Example:
   Famous for service.
 
 
-[transform-words-shuffle ... ]
+[transform_words_shuffle ... ]
 This is used to rapidly transform words or phrases of the same length via random letters.
   Famous for sundaes.
   Famous for sjndqes.

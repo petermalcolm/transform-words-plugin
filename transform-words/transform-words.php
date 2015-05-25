@@ -33,4 +33,14 @@ defined( 'ABSPATH' ) or die( 'Do not access this file directly.' );
 function pmtw_install() {
 }
 
+function pmtw_transform_words_replace( $atts ) {
+	$a = shortcode_atts( array(
+		'foo' => 'something',
+		'bar' => 'something else',
+	), $atts );
+
+	return "TRANSFORMED";
+}
+add_shortcode( 'transform_words_replace', 'pmtw_transform_words_replace' );
+
 ?>
