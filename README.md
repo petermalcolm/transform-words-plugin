@@ -1,20 +1,20 @@
 # transform-words-plugin
-WordPress Plugin for words that transform using jQuery transitions
-Shortcodes:
-[transform_words_replace ... ]
-This is used to replace words in a hero via fade-out and fade-in transitions.
-Example:
-  Famous for chocolate cake.
-  Famous for sundaes.
-  Famous for service.
+WordPress Plugin for words that transform using jQuery transitions. <br>
+Shortcodes:<br>
+[transform_words_replace ... ]<br>
+This is used to replace words in a hero via fade-out and fade-in transitions.<br>
+Example:<br>
+    Famous for chocolate cake.<br>
+    Famous for sundaes.<br>
+    Famous for service.<br>
+<br>
 
-
-[transform_words_shuffle ... ]
-This is used to rapidly transform words or phrases of the same length via random letters.
-  Famous for sundaes.
-  Famous for sjndqes.
-  Famous for sendqrs.
-  Famous for sendqcs.
-  Famous for serdqce.
-  Famous for servqce.
-  Famous for service.
+[transform_words_shuffle ... ]<br>
+This is used to rapidly transform words or phrases of the same length via random letters.<br>
+  Famous for sundaes.<br>
+  Famous for sjndqes.<br>
+  Famous for sendqrs.<br>
+  Famous for sendqcs.<br>
+  Famous for serdqce.<br>
+  Famous for servqce.<br>
+  Famous for service.<br>
