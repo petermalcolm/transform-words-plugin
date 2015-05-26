@@ -35,8 +35,8 @@ function pmtw_install() {
 
 function pmtw_transform_words_replace( $atts ) {
 	$a = shortcode_atts( array(
-		'foo' => 'something',
-		'bar' => 'something else',
+		'words' => [],
+		'delay' => 5000,
 	), $atts );
 
 	return "TRANSFORMED";
