@@ -8,7 +8,7 @@ Example:<br>
     Famous for sundaes.<br>
     Famous for service.<br>
 <br>
-In this example [transform_words_replace words="chocolate cake, sundaes, service"] <br>
+In this example **[transform_words_replace words="chocolate cake, sundaes, service"]** <br>
 Possible attributes include: <br>
 *   *words* (see example above) DEFAULT: <empty string, no words> <br>
 *   *delay* (number in milliseconds between transformations) DEFAULT: 5000
