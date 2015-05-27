@@ -30,8 +30,43 @@ SOFTWARE.
 
 defined( 'ABSPATH' ) or die( 'Do not access this file directly.' );
 
-function pmtw_install() {
+/**
+ * A small helper class to build HTML with a unique ID
+ * in a <span> around the transform_words
+ * @since 0.1
+ */
+class PMTW_transform_words_html
+{
+    private $span_id;
+
+    public function __construct($id)
+    {
+        $this->span_id = $id;
+    }
+    public function before_span()
+    {
+        return "<span id=\"pmtw-" . $span_id . "\">";
+    }
 }
+
+/**
+ * A Factory to build the <spans>
+ * @since 0.1
+ */
+class PMTW_transform_words_html_Factory
+{
+
+    private static $id = 0;
+
+    /**
+     * @return PMTW_transform_words_html
+     */
+    public static function create()
+    {
+        return new PMTW_transform_words_html($id++);
+    }
+}
+
 
 function pmtw_transform_words_replace( $atts ) {
 	$a = shortcode_atts( array(
