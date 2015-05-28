@@ -74,7 +74,7 @@ function pmtw_transform_words_replace( $atts ) {
 		'delay' => 5000,
 	), $atts );
 
-    $open_html = PMTW_transform_words_html_Factory::create()
+    $open_html = PMTW_transform_words_html_Factory::create();
 
 	return $open_html->before_span() . $a['words'] . "</span>";  // TODO: Parse words
 }
