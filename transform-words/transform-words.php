@@ -45,25 +45,24 @@ class PMTW_transform_words_html
     }
     public function before_span()
     {
-        return "<span id=\"pmtw-" . $span_id . "\">";
+        return "<span id=\"pmtw-" . $this->span_id . "\">";
     }
 }
 
 /**
- * A Factory to build the <spans>
+ * A Factory to build the <spans> with unique ids
  * @since 0.1
  */
 class PMTW_transform_words_html_Factory
 {
-
-    private static $id = 0;
+    private static $PMTW_id = 0;
 
     /**
      * @return PMTW_transform_words_html
      */
     public static function create()
     {
-        return new PMTW_transform_words_html($id++);
+        return new PMTW_transform_words_html(self::$PMTW_id++);
     }
 }
 
