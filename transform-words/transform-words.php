@@ -43,9 +43,9 @@ class PMTW_transform_words_html
     {
         $this->span_id = $id;
     }
-    public function before_span()
+    public function start_span($type)
     {
-        return "<span id=\"pmtw-" . $this->span_id . "\">";
+        return "<span id=\"pmtw-" . $type . "-" . $this->span_id . "\">";
     }
 }
 
@@ -75,7 +75,7 @@ function pmtw_transform_words_replace( $atts ) {
 
     $open_html = PMTW_transform_words_html_Factory::create();
 
-	return $open_html->before_span() . $a['words'] . "</span>";  // TODO: Parse words
+	return $open_html->start_span("replace") . $a['words'] . "</span>";  // TODO: Parse words
 }
 
 add_shortcode( 'transform_words_replace', 'pmtw_transform_words_replace' );
