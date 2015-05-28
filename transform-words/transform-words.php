@@ -74,8 +74,11 @@ function pmtw_transform_words_replace( $atts ) {
 		'delay' => 5000,
 	), $atts );
 
-	return "TRANSFORMED";
+    $open_html = PMTW_transform_words_html_Factory::create()
+
+	return $open_html->before_span() . $a['words'];  // TODO: Parse words
 }
+
 add_shortcode( 'transform_words_replace', 'pmtw_transform_words_replace' );
 
 ?>
