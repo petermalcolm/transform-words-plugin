@@ -70,9 +70,9 @@ class PMTW_transform_words_html_Factory
 
 function pmtw_transform_words_replace( $atts ) {
 	$a = shortcode_atts( array(
-		'words' => [],
+		'words' => array(),
 		'delay' => 5000,
-	), $atts );
+    ), $atts );
 
     $open_html = PMTW_transform_words_html_Factory::create();
 
