@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "transform-words.js",
+  "sourceRoot": "",
+  "sources": [
+    "transform-words.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,IAAA,wDAAO,UAAU;;EAEjB,IAAI,CAAC,cAAL,GAAsB;AAFtB"
+}
